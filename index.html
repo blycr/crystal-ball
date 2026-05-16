@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>魔法占卜球 - Magic Crystal Ball</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #020205;
+      overflow: hidden;
+      font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    #canvas-container {
+      width: 100%;
+      height: 100%;
+    }
+    #info {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: rgba(180, 180, 255, 0.5);
+      font-size: 13px;
+      letter-spacing: 2px;
+      pointer-events: none;
+      user-select: none;
+      text-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
+      transition: opacity 1s ease;
+    }
+    #title {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: rgba(200, 200, 255, 0.25);
+      font-size: 11px;
+      letter-spacing: 6px;
+      pointer-events: none;
+      user-select: none;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <div id="info">按住鼠标在球体上拖拽，唤醒流体的魔力</div>
+  <div id="title">Crystal Ball Divination</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
